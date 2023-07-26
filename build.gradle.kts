@@ -7,7 +7,7 @@ plugins {
 
 group = "com.shiveenp"
 version = "1.0-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_11
+java.sourceCompatibility = JavaVersion.VERSION_12
 
 repositories {
     mavenCentral()
