@@ -13,7 +13,8 @@ class GithubWebClientConfig {
 
     @Bean
     fun webClient(clientRegistrations: ReactiveClientRegistrationRepository?,
-                  authorizedClients: ServerOAuth2AuthorizedClientRepository?): WebClient? {
+                  authorizedClients: ServerOAuth2AuthorizedClientRepository?): WebClient?
+    {
         val oauth = ServerOAuth2AuthorizedClientExchangeFilterFunction(clientRegistrations, authorizedClients)
          oauth.setDefaultOAuth2AuthorizedClient(true)
         return WebClient.builder()
